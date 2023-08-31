@@ -1,6 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import Sidebar from './components/sidebar'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -18,8 +19,8 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <div className="min-h-screen grid grid-cols-app ">
-          <aside className="">sidebar</aside>
-          {children}
+          <Sidebar />
+          <main className="px-4 pb-12 pt-8">{children}</main>
         </div>
       </body>
     </html>
