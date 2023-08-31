@@ -1,10 +1,22 @@
 export default function Home() {
   return (
-    <div className="h-screen bg-slate-800 p-4 text-slate-100  ">
-      <h1 className="text-5x text-5xl   gap-3 font-bold before:h-12 before:w-1 before:bg-blue-500 flex text-center ">Hello Tailwind</h1>
-      <h2>Hello Tailwind</h2>
-      <p>Hello Tailwind</p>
-      <button disabled={true} className="bg-sky-500 px-4 py-2 rounded-md font-medium  mt-4 enabled:hover:bg-sky-700 transition-[300] disabled:cursor-not-allowed disabled:opacity-50 disabled:bg-sky-700">Sing In</button>
+    <div className="dark: flex h-screen flex-col items-center  bg-slate-50 p-4 text-center  text-slate-900 dark:bg-slate-900 dark:text-slate-100 ">
+      <div className="max-w-2xl ">
+        <h1 className="gap-3  text-3xl font-bold  sm:text-5xl">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium
+        </h1>
+
+        <p className="mt-2 dark:text-slate-400 ">
+          nhsadiojhsadokasjhdlaiskjdhasliduhasdkljash
+          dliasuaaaaaaaaaaaaaaaaaaaaaaaaaasuhjdflaksjhdfliakjsfhaklsjfhaslkfjhaklsjfh
+        </p>
+        <button
+          disabled={false}
+          className="mt-4 rounded-md bg-sky-500 px-4 py-2 font-medium text-white  transition-[300] enabled:hover:bg-sky-700 disabled:cursor-not-allowed disabled:bg-sky-700 disabled:opacity-50 dark:bg-sky-400 dark:text-sky-950"
+        >
+          Sing In
+        </button>
+      </div>
     </div>
-  );
+  )
 }
