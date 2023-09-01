@@ -1,6 +1,6 @@
 export default function LogoMark() {
   return (
-    <strong className="flex items-center gap-2 text-xl font-semibold text-zinc-900">
+    <strong className="flex items-center gap-2 text-xl font-semibold text-zinc-900 mx-1">
       <svg
         width={38}
         height={38}
@@ -203,7 +203,7 @@ export default function LogoMark() {
           </clipPath>
         </defs>
       </svg>
-      <span>Untitled UI</span>
+      <span className="">Untitled UI</span>
     </strong>
   )
 }
