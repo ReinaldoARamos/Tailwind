@@ -5,7 +5,7 @@ export function SettingsTabs() {
   return (
     <Tabs.Root>
       <Tabs.List className="mt-6 flex w-full items-center gap-4  border-b border-zinc-600">
-        <TabItem title="My Details" key={''} value="my-details" />
+        <TabItem title="My Details" key={''} value="my-details" isSelected />
         <TabItem title="Profile" key={''} value="profile" />
         <TabItem title="Password" key={''} value="password" />
         <TabItem title="plan" key={''} value="Plan" />
