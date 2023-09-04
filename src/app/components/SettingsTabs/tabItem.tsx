@@ -10,7 +10,7 @@ export function TabItem({ title, value, isSelected }: TabItemProps) {
   return (
     <Tabs.Trigger
       value={value}
-      className="px-1 pb-4 text-sm font-medium text-zinc-500 hover:text-violet-700  relative  data-[state=active]:text-red-500"
+      className="px-1 pb-4 text-sm font-medium text-zinc-500 hover:text-violet-700  relative  data-[state=active]:text-violet-600"
     >
       <span>{title}</span>
       {isSelected && (
