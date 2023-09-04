@@ -14,7 +14,7 @@ import LogoMark from './Logo'
 import { NavItem } from './NavItem'
 import { UsedSpaceWidget } from './UsedSpaceWidget'
 import { Profile } from './Profile'
-import { InputControls, InputPrefix, InputRoot } from '../input'
+import { InputControls, InputPrefix, InputRoot } from './input'
 
 export default function Sidebar() {
   return (
@@ -24,7 +24,7 @@ export default function Sidebar() {
         <InputPrefix>
           <Search className="h-5 w-5 text-zinc-500" />
         </InputPrefix>
-        <InputControls />
+        <InputControls placeholder="Search" />
       </InputRoot>
       <nav className="space-y-05">
         <NavItem title="Home" icon={Home} />
