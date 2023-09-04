@@ -1,4 +1,9 @@
 import { SettingsTabs } from './components/SettingsTabs'
+import {
+  InputControls,
+  InputPrefix,
+  InputRoot,
+} from './components/sidebar/input'
 
 export default function Home() {
   return (
@@ -28,8 +33,47 @@ export default function Home() {
           </div>
         </div>
 
-        <form id="settings" action="" className="mt-6 flex flex-col w-full ">
-          form
+        <form
+          id="settings"
+          action=""
+          className="mt-6 flex flex-col w-full gap-5 "
+        >
+          <div className="grid gap-3 grid-cols-form">
+            <label
+              htmlFor="firtsName"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Name
+            </label>
+            <div className="grid gap-6 grid-cols-2">
+              <InputRoot>
+                <InputControls
+                  id="FirtsName"
+                  defaultValue={'Reinaldo'}
+                ></InputControls>
+              </InputRoot>
+              <InputRoot>
+                <InputControls defaultValue={'Ramos'}></InputControls>
+              </InputRoot>
+            </div>
+          </div>
+          <div className="grid gap-3 grid-cols-form">
+            <label
+              htmlFor="firtsName"
+              className="text-sm font-medium text-zinc-700"
+            >
+              Email
+            </label>
+            <div className="grid gap-6 grid-cols-2">
+              <InputRoot>
+                <InputControls
+                  id="Email"
+                  defaultValue={'Gamersolitavi4l@gmail.com'}
+                  typeof="email"
+                ></InputControls>
+              </InputRoot>
+            </div>
+          </div>
         </form>
       </div>
     </>
