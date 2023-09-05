@@ -1,3 +1,4 @@
+import { Mail } from 'lucide-react'
 import { SettingsTabs } from './components/SettingsTabs'
 import {
   InputControls,
@@ -36,7 +37,7 @@ export default function Home() {
         <form
           id="settings"
           action=""
-          className="mt-6 flex flex-col w-full gap-5 "
+          className="mt-6 flex flex-col w-full gap-5 divide-y divide-zinc-200"
         >
           <div className="grid gap-3 grid-cols-form">
             <label
@@ -50,6 +51,7 @@ export default function Home() {
                 <InputControls
                   id="FirtsName"
                   defaultValue={'Reinaldo'}
+                  type="text"
                 ></InputControls>
               </InputRoot>
               <InputRoot>
@@ -57,22 +59,101 @@ export default function Home() {
               </InputRoot>
             </div>
           </div>
-          <div className="grid gap-3 grid-cols-form">
+          <div className="grid gap-3 grid-cols-form  pt-5">
             <label
-              htmlFor="firtsName"
-              className="text-sm font-medium text-zinc-700"
+              htmlFor="email"
+              className="text-sm font-medium text-zinc-700 "
             >
               Email
             </label>
             <div className="grid gap-6 grid-cols-2">
               <InputRoot>
+                <InputPrefix>
+                  <Mail className="h-5 w-5 text-zinc-500" />
+                </InputPrefix>
                 <InputControls
                   id="Email"
                   defaultValue={'Gamersolitavi4l@gmail.com'}
-                  typeof="email"
+                  type="email"
                 ></InputControls>
               </InputRoot>
             </div>
+          </div>
+
+          <div className="grid gap-3 grid-cols-form  pt-5">
+            <label
+              htmlFor="Role"
+              className="text-sm font-medium text-zinc-700  space-y-0.5 "
+            >
+              Your Photo
+              <span className=" block text-sm font-normal text-zinc-500">
+                This will be displayed on your profile
+              </span>
+            </label>
+            <div></div>
+          </div>
+
+          <div className="grid gap-3 grid-cols-form  pt-5">
+            <label
+              htmlFor="firtsName"
+              className="text-sm font-medium text-zinc-700 "
+            >
+              Role
+            </label>
+            <div className="grid gap-6 grid-cols-2">
+              <InputRoot>
+                <InputControls
+                  id="role"
+                  defaultValue={'Admin'}
+                  type="text"
+                ></InputControls>
+              </InputRoot>
+            </div>
+          </div>
+
+          <div className="grid gap-3 grid-cols-form  pt-5">
+            <label
+              htmlFor="country"
+              className="text-sm font-medium text-zinc-700 "
+            >
+              Country
+            </label>
+            <div></div>
+          </div>
+          <div className="grid gap-3 grid-cols-form  pt-5">
+            <label
+              htmlFor="time-zone"
+              className="text-sm font-medium text-zinc-700 "
+            >
+              Time Zone
+            </label>
+            <div></div>
+          </div>
+
+          <div className="grid gap-3 grid-cols-form  pt-5">
+            <label
+              htmlFor="bio"
+              className="text-sm font-medium text-zinc-700  space-y-0.5 "
+            >
+              Bio
+              <span className=" block text-sm font-normal text-zinc-500">
+                Write a short introduction to yourself
+              </span>
+            </label>
+            <div></div>
+          </div>
+
+          <div className="grid gap-3 grid-cols-form  pt-5">
+            <label
+              htmlFor="portfolio"
+              className="text-sm font-medium text-zinc-700  space-y-0.5 "
+            >
+              Portfolio
+              <span className=" block text-sm font-normal text-zinc-500">
+                Share a few snippets of your work
+              </span>
+            </label>
+            <div></div>
           </div>
         </form>
       </div>
