@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react'
+import { Mail, UploadCloud, User } from 'lucide-react'
 import { SettingsTabs } from './components/SettingsTabs'
 import {
   InputControls,
@@ -82,7 +82,7 @@ export default function Home() {
 
           <div className="grid gap-3 grid-cols-form  pt-5">
             <label
-              htmlFor="Role"
+              htmlFor="photo"
               className="text-sm font-medium text-zinc-700  space-y-0.5 "
             >
               Your Photo
@@ -90,7 +90,33 @@ export default function Home() {
                 This will be displayed on your profile
               </span>
             </label>
-            <div></div>
+            <div className="flex items-start gap-5 ">
+              <div className="bg-violet-50 flex h-16 w-16 items-center justify-center rounded-full">
+                <User className="w-8 h-8 text-zinc-500" />
+              </div>
+              <input id="photo" type="file" className="sr-only" />
+              <label
+                htmlFor="photo"
+                className="flex-1 cursor-pointer flex-col flex items-center justify-center gap-3 rounded-lg shadow-sm border border-zinc-300 px-6 py-4 text-center text-zinc-500"
+              >
+                <div className="rounded-full border-6 border-zinc-50 bg-zinc-100 p-2">
+                  <UploadCloud className="w-5 h-5 text-zinc-600 " />
+                </div>
+
+                <div className="flex flex-col items-center gap-1">
+                  <span className="text-sm">
+                    <span className="text-violet-700 font-semibold">
+                      {' '}
+                      Click to Upload
+                    </span>{' '}
+                    or drag and drop
+                  </span>
+                </div>
+                <span className="text-xs">
+                  SVG, PNG, JPG or GIF (max. 800x400px)
+                </span>
+              </label>
+            </div>
           </div>
 
           <div className="grid gap-3 grid-cols-form  pt-5">
