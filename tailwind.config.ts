@@ -13,6 +13,12 @@ const config: Config = {
       borderWidth: {
         6: '6px',
       },
+
+      colors: {
+        violet: {
+          25: 'fcfaff',
+        },
+      },
     },
   },
   plugins: [],
