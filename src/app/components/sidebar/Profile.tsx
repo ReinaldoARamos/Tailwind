@@ -1,5 +1,4 @@
 import { LogOut } from 'lucide-react'
-import Image from 'next/image'
 
 export function Profile() {
   return (
@@ -13,6 +12,7 @@ export function Profile() {
       <div className="flex flex-1 flex-col truncate">
         <span className="text-sm font-semibold text-zinc-700">Reinaldo</span>
         <span className='text-sm text-zinc-500 '>Gamersolitavi4l@gmail.com</span>
+ 
         
       </div>
       <button className='ml-auto p-2 hover:bg-zinc-50 rounded-full'>
