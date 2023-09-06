@@ -93,7 +93,7 @@ export default function Home() {
 
             <Form.Root className="flex items-start gap-5 ">
               <Form.ImagePreview />
-              <Form.Trigger></Form.Trigger>
+              <Form.Trigger />
               <Form.Control />
             </Form.Root>
           </div>
@@ -160,7 +160,7 @@ export default function Home() {
             </label>
             <Form.Root>
               <Form.Trigger />
-              <Form.Control />
+              <Form.Control multiple />
             </Form.Root>
           </div>
 
