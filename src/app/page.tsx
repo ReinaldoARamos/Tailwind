@@ -6,6 +6,7 @@ import {
   InputRoot,
 } from './components/sidebar/input'
 import * as Form from './components/Form/FileInput'
+
 export default function Home() {
   return (
     <>
@@ -160,6 +161,7 @@ export default function Home() {
             </label>
             <Form.Root>
               <Form.Trigger />
+              <Form.FileList />
               <Form.Control multiple />
             </Form.Root>
           </div>

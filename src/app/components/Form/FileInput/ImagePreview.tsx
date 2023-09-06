@@ -21,13 +21,12 @@ export function ImagePreview() {
     )
   } else {
     return (
-      <div className="bg-violet-50 flex h-16 w-16 items-center justify-center rounded-full">
+      // eslint-disable-next-line
         <img
-          src={previewUrl}
-          alt=""
-          className="h-16 w-16 rounded-full object-cover"
-        />
-      </div>
+        src={previewUrl}
+        alt=""
+        className="h-16 w-16 rounded-full object-cover"
+      />
     )
   }
 }
