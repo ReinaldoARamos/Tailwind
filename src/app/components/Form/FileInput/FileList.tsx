@@ -2,13 +2,10 @@
 
 import { UploadCloud } from 'lucide-react'
 import { useFileInput } from './Root'
-
+import { formatBytes } from '../../utils/FormatBytesToMb'
 export function FileList() {
   const { files } = useFileInput()
-  const FilesToMb = files.map((file) => {
-    const Convert = file.size / 1048576
-    return Convert.toFixed(2)
-  })
+
   return (
     <div className="mt-4 space-y-3">
       {files.map((file) => {
@@ -26,7 +23,7 @@ export function FileList() {
                   {file.name}
                 </span>
                 <span className="text-sm text-zinc-500 font-medium">
-                  {FilesToMb}
+                  {formatBytes(file.size)}
                   <strong>Mb</strong>
                 </span>
               </div>
