@@ -4,13 +4,13 @@ import { ChevronDown } from 'lucide-react'
 import { SelectedItem } from './SelectItem'
 import { ReactNode } from 'react'
 
-export interface SelectProps {
+export interface SelectProps extends Select.SelectProps {
   children: ReactNode
   placeholder: string
 }
-export function SelectForm({ children, placeholder }: SelectProps) {
+export function SelectForm({ children, placeholder, ...props }: SelectProps) {
   return (
-    <Select.Root>
+    <Select.Root {...props}>
       <Select.Trigger className=" justify-between flex  w-full items-center gap-2 rounded-lg border border-zinc-300 px-3 py-2 shadow-sm data-[placeholder]:text-zinc-600">
         <Select.Value className="text-black" placeholder={placeholder} />
         <Select.Icon>

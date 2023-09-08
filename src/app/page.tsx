@@ -162,7 +162,14 @@ export default function Home() {
                 Write a short introduction to yourself
               </span>
             </label>
-            <div></div>
+            <div className="space-y-13">
+              <div className="grid gap-3 grid-cols-2 ">
+                <Form.SelectForm value="normal" placeholder="">
+                  <SelectedItem text="Normal" value="normal" />
+                  <SelectedItem text="Markdown" value="markdown" />
+                </Form.SelectForm>
+              </div>
+            </div>
           </div>
 
           <div className="grid gap-3 grid-cols-form  pt-5">
