@@ -6,6 +6,7 @@ import {
   InputRoot,
 } from './components/sidebar/input'
 import * as Form from './components/Form/FileInput'
+import { SelectedItem } from './components/Form/FileInput/Select/SelectItem'
 
 export default function Home() {
   return (
@@ -124,20 +125,33 @@ export default function Home() {
               Country
             </label>
             <div className="grid gap-6 grid-cols-2">
-              <Form.SelectForm />
+              <Form.SelectForm placeholder="Select a Country">
+                <SelectedItem text="Brazil" value="br" />
+                <SelectedItem text="United States" value="us" />
+                <SelectedItem text="Russia" value="ur" />
+              </Form.SelectForm>
             </div>
           </div>
-
           <div className="grid gap-3 grid-cols-form  pt-5">
             <label
-              htmlFor="time-zone"
+              htmlFor="Country"
               className="text-sm font-medium text-zinc-700 "
             >
-              Time Zone
+              Country
             </label>
-            <div></div>
+            <div className="grid gap-6 grid-cols-2">
+              <Form.SelectForm placeholder="Select a Timezone">
+                <SelectedItem
+                  text="Pacific Standard Time (UTC-08:00)"
+                  value="pacific"
+                />
+                <SelectedItem
+                  text="America São Paulo Standard Time (UTC-03:00)"
+                  value="sao-paulo"
+                />
+              </Form.SelectForm>
+            </div>
           </div>
-
           <div className="grid gap-3 grid-cols-form  pt-5">
             <label
               htmlFor="bio"
