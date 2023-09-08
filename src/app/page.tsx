@@ -1,4 +1,4 @@
-import { Mail } from 'lucide-react'
+import { ChevronDown, Mail } from 'lucide-react'
 import { SettingsTabs } from './components/SettingsTabs'
 import {
   InputControls,
@@ -101,7 +101,7 @@ export default function Home() {
 
           <div className="grid gap-3 grid-cols-form  pt-5">
             <label
-              htmlFor="firtsName"
+              htmlFor="role"
               className="text-sm font-medium text-zinc-700 "
             >
               Role
@@ -116,16 +116,18 @@ export default function Home() {
               </InputRoot>
             </div>
           </div>
-
           <div className="grid gap-3 grid-cols-form  pt-5">
             <label
-              htmlFor="country"
+              htmlFor="Country"
               className="text-sm font-medium text-zinc-700 "
             >
               Country
             </label>
-            <div></div>
+            <div className="grid gap-6 grid-cols-2">
+              <Form.SelectForm />
+            </div>
           </div>
+
           <div className="grid gap-3 grid-cols-form  pt-5">
             <label
               htmlFor="time-zone"

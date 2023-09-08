@@ -24,7 +24,6 @@ export function FileList() {
                 </span>
                 <span className="text-sm text-zinc-500 font-medium">
                   {formatBytes(file.size)}
-                  <strong>Mb</strong>
                 </span>
               </div>
             </div>
