@@ -3,5 +3,5 @@ import { ImagePreview } from './ImagePreview'
 import { Trigger } from './Trigger'
 import { Root } from './Root'
 import { FileList } from './FileList'
-import { SelectForm } from './Select'
+import { SelectForm } from './Select/index'
 export { Control, ImagePreview, Root, Trigger, FileList, SelectForm }
