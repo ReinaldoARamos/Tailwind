@@ -21,7 +21,7 @@ export function SelectForm({ children, placeholder, ...props }: SelectProps) {
         <Select.Content
           side="bottom"
           position="popper"
-          className="z-10 rounded-lg border border-zinc-200 bg-white outline-none  cursor-pointer w-[--radix-select-trigger-width]"
+          className="z-10 shadow-sm rounded-lg border border-zinc-200 bg-white outline-none  cursor-pointer w-[--radix-select-trigger-width]"
           sideOffset={8}
         >
           <Select.Viewport>{children}</Select.Viewport>

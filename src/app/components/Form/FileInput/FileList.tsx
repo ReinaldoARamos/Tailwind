@@ -2,7 +2,7 @@
 
 import { UploadCloud } from 'lucide-react'
 import { useFileInput } from './Root'
-import { formatBytes } from '../../utils/FormatBytesToMb'
+import { formatBytes } from '../../../utils/FormatBytesToMb'
 export function FileList() {
   const { files } = useFileInput()
 

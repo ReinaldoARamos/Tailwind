@@ -1,4 +1,12 @@
-import { ChevronDown, Mail } from 'lucide-react'
+import {
+  Bold,
+  Italic,
+  Link,
+  List,
+  ListOrdered,
+  LogOut,
+  Mail,
+} from 'lucide-react'
 import { SettingsTabs } from './components/SettingsTabs'
 import {
   InputControls,
@@ -7,6 +15,7 @@ import {
 } from './components/sidebar/input'
 import * as Form from './components/Form/FileInput'
 import { SelectedItem } from './components/Form/FileInput/Select/SelectItem'
+import { TextArea } from './components/TextArea'
 
 export default function Home() {
   return (
@@ -168,6 +177,29 @@ export default function Home() {
                   <SelectedItem text="Normal" value="normal" />
                   <SelectedItem text="Markdown" value="markdown" />
                 </Form.SelectForm>
+                <div className="flex item-center gap-1 ">
+                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                    <Bold className="w-4 h-4text-500" strokeWidth={3} />
+                  </button>
+                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                    <Italic className="w-4 h-4 text-500" strokeWidth={3} />
+                  </button>
+                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                    <Link className="w-4 h-4 text-500" strokeWidth={3} />
+                  </button>
+                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                    <List className="w-4 h-4 text-500" strokeWidth={3} />
+                  </button>
+                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                    <ListOrdered className="w-4 h-4 text-500" strokeWidth={3} />
+                  </button>
+                </div>
+                <TextArea
+                  id="bio"
+                  defaultValue={
+                    "I'm a front end dev with focus on react and next.js"
+                  }
+                />
               </div>
             </div>
           </div>
