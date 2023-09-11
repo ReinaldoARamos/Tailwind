@@ -16,6 +16,7 @@ import {
 import * as Form from './components/Form/FileInput'
 import { SelectedItem } from './components/Form/FileInput/Select/SelectItem'
 import { TextArea } from './components/TextArea'
+import { Button } from './components/Button'
 
 export default function Home() {
   return (
@@ -32,16 +33,8 @@ export default function Home() {
             </span>
           </div>
           <div className="flex items center gap-2 ">
-            <button className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm border-zinc-300 text-zinc-700 hover:bg-zinc-50 ">
-              Cancel
-            </button>
-            <button
-              type="submit"
-              form="settings"
-              className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700"
-            >
-              Save
-            </button>
+            <Button variant="outline"> Cancel</Button>
+            <Button>Save</Button>
           </div>
         </div>
 
