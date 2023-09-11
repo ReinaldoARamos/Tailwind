@@ -1,22 +1,42 @@
 import { formatBytes } from '@/app/utils/FormatBytesToMb'
 import { CheckCircle2, Trash2, UploadCloud, X } from 'lucide-react'
 import { Button } from '../../Button'
+import { tv, VariantProps } from 'tailwind-variants'
 
-export interface FileItemProps {
+const fileItem = tv({
+  slots: {
+    container:
+      'group flex items-start rounded-lg gap-4 border-zinc-200 p-4 border',
+    icon: 'bg-violet-200 rounded-full border-violet-100 p-2 text-violet-600',
+  },
+  variants: {
+    state: {
+      progress: { container: '' },
+      error: {
+        container: 'bg-error-25 border border-error300',
+        icon: 'border-error-50 bg-error-100 text-error-600',
+      },
+      complete: { container: 'border border-violet-500' },
+    },
+  },
+  defaultVariants: {
+    state: 'progress',
+  },
+})
+
+export interface FileItemProps extends VariantProps<typeof fileItem> {
   name: string
   size: number
 }
-export function FileItem({ name, size }: FileItemProps) {
-  const state = 'complete' as 'progress' | 'error' | 'complete'
+
+export function FileItem({ name, size, state }: FileItemProps) {
+  const { container, icon } = fileItem({ state })
   return (
-    <div
-      key={name}
-      className="group flex items-start rounded-lg gap-4 border-zinc-200 p-4 border"
-    >
+    <div key={name} className={container()}>
       {state === 'error' ? (
         <>
-          <div className="bg-violet-200 rounded-full border-violet-100 p-2 text-violet-600">
-            <X className="h-4 w-4 text-error-400 fill-error-700" />
+          <div className={icon()}>
+            <UploadCloud className="h-4 w-4 text-error-400 fill-error-700" />
           </div>
           <div className="flex flex-1 flex-col items-start gap-1 ">
             <div className="flex flex-col">
@@ -36,7 +56,7 @@ export function FileItem({ name, size }: FileItemProps) {
         </>
       ) : (
         <>
-          <div className="bg-violet-200 rounded-full border-violet-100 p-2 text-violet-600">
+          <div className={icon()}>
             <UploadCloud className="h-4 w-4" />
           </div>
           <div className="flex flex-1 flex-col items-start gap-1 ">
