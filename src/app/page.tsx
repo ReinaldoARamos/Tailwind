@@ -171,21 +171,21 @@ export default function Home() {
                   <SelectedItem text="Markdown" value="markdown" />
                 </Form.SelectForm>
                 <div className="flex item-center gap-1 ">
-                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                  <Button variant="ghost">
                     <Bold className="w-4 h-4text-500" strokeWidth={3} />
-                  </button>
-                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                  </Button>
+                  <Button variant="ghost">
                     <Italic className="w-4 h-4 text-500" strokeWidth={3} />
-                  </button>
-                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                  </Button>
+                  <Button variant="ghost">
                     <Link className="w-4 h-4 text-500" strokeWidth={3} />
-                  </button>
-                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                  </Button>
+                  <Button variant="ghost">
                     <List className="w-4 h-4 text-500" strokeWidth={3} />
-                  </button>
-                  <button className=" p-2 hover:bg-zinc-50 rounded-full">
+                  </Button>
+                  <Button variant="ghost">
                     <ListOrdered className="w-4 h-4 text-500" strokeWidth={3} />
-                  </button>
+                  </Button>
                 </div>
                 <TextArea
                   id="bio"
@@ -215,15 +215,10 @@ export default function Home() {
           </div>
 
           <div className="flex items-center justify-end pt-5">
-            <button className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm border-zinc-300 text-zinc-700 hover:bg-zinc-50 ">
-              Cancel
-            </button>
-            <button
-              type="submit"
-              className="rounded-lg px-4 py-2 text-sm font-semibold shadow-sm bg-violet-600 text-white hover:bg-violet-700"
-            >
+            <Button variant="outline">Cancel</Button>
+            <Button type="submit" form="settings">
               Save
-            </button>
+            </Button>
           </div>
         </form>
       </div>
