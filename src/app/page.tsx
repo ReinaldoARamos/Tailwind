@@ -52,7 +52,7 @@ export default function Home() {
             >
               Name
             </label>
-            <div className="grid gap-6 grid-cols-2">
+            <div className="grid gap-6 grid-cols-2 ">
               <InputRoot>
                 <InputControls
                   id="FirtsName"
@@ -65,7 +65,8 @@ export default function Home() {
               </InputRoot>
             </div>
           </div>
-          <div className="grid gap-3 grid-cols-form  pt-5">
+
+          <div className="lg:grid gap-3 lg:grid-cols-form  flex flex-col pt-5">
             <label
               htmlFor="email"
               className="text-sm font-medium text-zinc-700 "
@@ -86,7 +87,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-3 grid-cols-form  pt-5">
+          <div className="lg:grid gap-3 lg:grid-cols-form  flex flex-col pt-5">
             <label
               htmlFor="photo"
               className="text-sm font-medium text-zinc-700  space-y-0.5 "
@@ -104,7 +105,7 @@ export default function Home() {
             </Form.Root>
           </div>
 
-          <div className="grid gap-3 grid-cols-form  pt-5">
+          <div className="lg:grid gap-3 lg:grid-cols-form  flex flex-col pt-5">
             <label
               htmlFor="role"
               className="text-sm font-medium text-zinc-700 "
@@ -121,7 +122,7 @@ export default function Home() {
               </InputRoot>
             </div>
           </div>
-          <div className="grid gap-3 grid-cols-form  pt-5">
+          <div className="lg:grid gap-3 lg:grid-cols-form  flex flex-col pt-5">
             <label
               htmlFor="Country"
               className="text-sm font-medium text-zinc-700 "
@@ -136,7 +137,7 @@ export default function Home() {
               </Form.SelectForm>
             </div>
           </div>
-          <div className="grid gap-3 grid-cols-form  pt-5">
+          <div className="lg:grid gap-3 lg:grid-cols-form  flex flex-col pt-5">
             <label
               htmlFor="Country"
               className="text-sm font-medium text-zinc-700 "
@@ -156,7 +157,7 @@ export default function Home() {
               </Form.SelectForm>
             </div>
           </div>
-          <div className="grid gap-3 grid-cols-form  pt-5">
+          <div className="lg:grid gap-3 lg:grid-cols-form  flex flex-col pt-5">
             <label
               htmlFor="bio"
               className="text-sm font-medium text-zinc-700  space-y-0.5 "
@@ -199,7 +200,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="grid gap-3 grid-cols-form  pt-5">
+          <div className="lg:grid gap-3 lg:grid-cols-form  flex flex-col pt-5">
             <label
               htmlFor="portfolio"
               className="text-sm font-medium text-zinc-700  space-y-0.5 "
@@ -216,7 +217,7 @@ export default function Home() {
             </Form.Root>
           </div>
 
-          <div className="flex items-center justify-end pt-5">
+          <div className="flex items-center lg:justify-end pt-5 gap-3">
             <Button variant="outline">Cancel</Button>
             <Button type="submit" form="settings">
               Save
