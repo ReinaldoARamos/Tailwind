@@ -24,7 +24,7 @@ export default function Home() {
       <h1 className="text-3xl font-medium text-zinc-900">Settings</h1>
       <SettingsTabs />
       <div className="mt-6 flex flex-col  ">
-        <div className="flex lg:flex-row lg:flex-col justify-between pb-5 items-center border-b border-zinc-200">
+        <div className="flex flex-col  lg:flex-row justify-between pb-5 items-center border-b border-zinc-200">
           <div className="space-y-1">
             <h2 className="text-lg font-medium text-zinc-900">Personal info</h2>
             <span className="text-sm text-zinc-500">
