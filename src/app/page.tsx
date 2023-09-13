@@ -98,7 +98,7 @@ export default function Home() {
               </span>
             </label>
 
-            <Form.Root className="flex items-start gap-5 ">
+            <Form.Root className="flex lg:items-start gap-5  lg:flex-row flex-col">
               <Form.ImagePreview />
               <Form.Trigger />
               <Form.Control />
