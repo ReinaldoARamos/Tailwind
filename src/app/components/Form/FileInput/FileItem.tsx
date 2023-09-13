@@ -71,7 +71,6 @@ export function FileItem({ name, size, state }: FileItemProps) {
                 className="h-2 bg-violet-600 rounded-lg "
                 style={{ width: state === 'complete' ? '100%' : '80%' }}
               />
-              {state === 'complete' ? '100%' : '80%'}
             </div>
           </div>
         </>

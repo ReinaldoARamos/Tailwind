@@ -101,7 +101,7 @@ export default function Home() {
             <Form.Root className="flex lg:items-start gap-5  lg:flex-row flex-col">
               <Form.ImagePreview />
               <Form.Trigger />
-              <Form.Control />
+              <Form.Control type="file" />
             </Form.Root>
           </div>
 
@@ -213,7 +213,7 @@ export default function Home() {
             <Form.Root>
               <Form.Trigger />
               <Form.FileList />
-              <Form.Control multiple />
+              <Form.Control multiple type="file" />
             </Form.Root>
           </div>
 

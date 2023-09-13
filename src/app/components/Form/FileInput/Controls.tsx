@@ -17,7 +17,6 @@ export function Control(props: ControlProps) {
   return (
     <input
       id={id}
-      type="file"
       className="sr-only"
       {...props}
       onChange={handleFileSelected}
