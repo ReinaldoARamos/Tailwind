@@ -1,5 +1,5 @@
 'use client'
-import { ComponentProps } from 'react'
+
 import * as Select from '@radix-ui/react-select'
 import { Check } from 'lucide-react'
 export type SelectedItemProps = Select.SelectItemProps & {
@@ -10,7 +10,7 @@ export function SelectedItem({ text, ...props }: SelectedItemProps) {
   return (
     <>
       <Select.Item
-        className="flex justify-between gap-2 px-3 py-2.5 data-[highlighted]:bg-zinc-50 outline-none"
+        className="flex justify-between gap-2 px-3 py-2.5 data-[highlighted]:bg-zinc-50 outline-none dark:data-[highlighted]:bg-zinc-700 dark:text-zinc-400 "
         {...props}
       >
         <Select.ItemText className="text-black">{text}</Select.ItemText>

@@ -15,7 +15,7 @@ export function SettingsTabs() {
           >
             <ScrollArea.Thumb className="relative flex-1 rounded-lg bg-zinc-300" />
           </ScrollArea.Scrollbar>
-          <Tabs.List className="mt-6 flex w-full items-center gap-4  border-b border-zinc-600">
+          <Tabs.List className="mt-6 flex w-full items-center gap-4  border-b border-zinc-600 dark:border-zinc-700">
             <TabItem
               title="My Details"
               key={''}
