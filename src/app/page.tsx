@@ -69,7 +69,7 @@ export default function Home() {
           <div className="lg:grid gap-3 lg:grid-cols-form  flex flex-col pt-5">
             <label
               htmlFor="email"
-              className="text-sm font-medium text-zinc-700 "
+              className="text-sm font-medium text-zinc-700  "
             >
               Email
             </label>
