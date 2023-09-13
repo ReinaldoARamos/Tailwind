@@ -22,7 +22,7 @@ import { Button } from '../Button'
 
 export default function Sidebar() {
   return (
-    <Collapsible.Root className="border-b border-zinc-200  flex flex-col gap-6 p-4  data-[state=open]:bottom-0  lg:data-[state=closed]:bottom-0 fixed left-0 top-0 right-0 z-20 bg-white lg:right-auto lg:w-80 lg:border-r lg:px-5 lg:py-8">
+    <Collapsible.Root className="border-b border-zinc-200  flex flex-col gap-6 p-4  data-[state=open]:bottom-0  lg:data-[state=closed]:bottom-0 fixed left-0 top-0 right-0 z-20 bg-white lg:right-auto lg:w-80 lg:border-r lg:px-5 lg:py-8 dark:bg-zinc-900 dark:border-zinc-700 ">
       <div className="flex items-center  ">
         <LogoMark />
         <div className="lg:hidden">
@@ -39,7 +39,7 @@ export default function Sidebar() {
       >
         <InputRoot>
           <InputPrefix>
-            <Search className="h-5 w-5 text-zinc-500" />
+            <Search className="h-5 w-5 text-zinc-500 dark:text-zinc-100" />
           </InputPrefix>
           <InputControls placeholder="Search" />
         </InputRoot>
